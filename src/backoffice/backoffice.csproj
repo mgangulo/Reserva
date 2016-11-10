@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -124,6 +125,7 @@
     <Content Include="view\dist\js\pages\dashboard.js" />
     <Content Include="view\dist\js\pages\dashboard2.js" />
     <Content Include="view\GestionDeAutomoviles.aspx" />
+    <Content Include="view\img\logo_small_50.png" />
     <Content Include="view\index.aspx" />
     <Content Include="view\plugins\bootstrap-slider\bootstrap-slider.js" />
     <Content Include="view\plugins\bootstrap-slider\slider.css" />
@@ -924,6 +926,8 @@
     <Content Include="view\plugins\timepicker\bootstrap-timepicker.js" />
     <Content Include="view\plugins\timepicker\bootstrap-timepicker.min.css" />
     <Content Include="view\plugins\timepicker\bootstrap-timepicker.min.js" />
+    <Content Include="view\WebForm1.aspx" />
+    <Content Include="view\WebForm2.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -941,6 +945,20 @@
     </Compile>
     <Compile Include="view\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
